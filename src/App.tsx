@@ -1,15 +1,12 @@
-import { styled } from 'styled-components';
+import { Box } from '@mui/material';
 import React from 'react';
 
-export const AppContainer = styled.div(({ theme }) => ({
-    backgroundColor: theme.palette.secondary.main,
-    boxSizing: 'border-box',
-    minHeight: '100vh',
-    padding: '8px',
-}));
+import { useStyles } from './styles';
 
 export const App: React.FC = () => {
-    return <AppContainer></AppContainer>;
+    const classes = useStyles();
+
+    return <Box className={classes.appContainer}></Box>;
 };
 
 export default App;
