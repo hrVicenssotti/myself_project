@@ -1,12 +1,16 @@
-import { Box } from '@mui/material';
+import { Route, Routes } from 'react-router-dom';
 import React from 'react';
 
-import { useStyles } from './styles';
+import { Home, Myself } from './pages';
 
 export const App: React.FC = () => {
-    const classes = useStyles();
-
-    return <Box className={classes.appContainer}></Box>;
+    return (
+        <Routes>
+            <Route path={'/'} element={<Home />} />
+            <Route path={'/myself'} element={<Myself />} />
+            <Route path={'*'} />
+        </Routes>
+    );
 };
 
 export default App;

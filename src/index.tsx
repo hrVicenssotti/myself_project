@@ -1,4 +1,5 @@
-import { ThemeProvider } from '@mui/material/styles';
+import { StyledEngineProvider, ThemeProvider } from '@mui/material/styles';
+import { BrowserRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import { StrictMode } from 'react';
 
@@ -8,8 +9,12 @@ import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <StrictMode>
-        <ThemeProvider theme={theme}>
-            <App />
-        </ThemeProvider>
+        <BrowserRouter>
+            <ThemeProvider theme={theme}>
+                <StyledEngineProvider injectFirst>
+                    <App />
+                </StyledEngineProvider>
+            </ThemeProvider>
+        </BrowserRouter>
     </StrictMode>
 );

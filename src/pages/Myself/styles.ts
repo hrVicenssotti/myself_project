@@ -8,4 +8,7 @@ export const useStyles = makeStyles((theme: Theme) => ({
         minHeight: '150vh',
         padding: '8px',
     },
+    navBar: {
+        boxShadow: '0px 10px 15px -8px #00000018',
+    },
 }));
