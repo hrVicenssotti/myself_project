@@ -5,10 +5,11 @@ export const useStyles = makeStyles((theme: Theme) => ({
     appContainer: {
         backgroundColor: theme.palette.secondary.main,
         boxSizing: 'border-box',
-        minHeight: '150vh',
-        padding: '8px',
+        minHeight: '100vh',
+        padding: '0.5rem',
     },
-    navBar: {
-        boxShadow: '0px 10px 15px -8px #00000018',
+    main: {
+        paddingTop: '3.5rem',
+        boxSizing: 'content-box',
     },
 }));
