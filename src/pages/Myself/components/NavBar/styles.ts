@@ -18,6 +18,8 @@ export const useStyles = makeStyles(() => ({
             padding: '0.5rem',
             margin: '0 0.5rem',
             fontSize: '1.25rem',
+            color: 'inherit',
+            textDecoration: 'inherit',
         },
     },
     navBarOffScroll: {

@@ -1,7 +1,6 @@
+import { AppBar, AppBarProps, Box, Link, Toolbar } from '@mui/material';
 import { Code } from '@mui/icons-material';
-import { AppBar, AppBarProps, Box, Toolbar } from '@mui/material';
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { useStyles } from './styles';
 
 export interface NabBarProps extends AppBarProps {
@@ -18,11 +17,11 @@ const NabBarRoot: React.FC<NabBarProps> = ({ scrollOffTop, ...props }) => {
                     <Code />
                 </Box>
                 <Box className={classes.navLinks}>
-                    <Link to={'#home'}>Inicio</Link>
-                    <Link to={'#skills'}>Habilidades</Link>
-                    <Link to={'#projects'}>Projetos</Link>
-                    <Link to={'#about'}>Sobre</Link>
-                    <Link to={'#contact'}>Contato</Link>
+                    <Link href={'#home'}>Inicio</Link>
+                    <Link href={'#skills'}>Habilidades</Link>
+                    <Link href={'#projects'}>Projetos</Link>
+                    <Link href={'#about'}>Sobre</Link>
+                    <Link href={'#contact'}>Contato</Link>
                 </Box>
             </Toolbar>
         </AppBar>
