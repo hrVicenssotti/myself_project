@@ -3,21 +3,18 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 
 import { useStyles } from './styles';
-import myselfImage from '../../assets/images/myself.jpg';
 
-export const Home: React.FC = () => {
+export const NotFound: React.FC = () => {
     const classes = useStyles();
-    const myselfName = 'Horlan Vicenssotti';
 
     return (
         <Box className={classes.appContainer}>
-            <img className={classes.myselfImage} src={myselfImage} alt={'Minha imagem'} />
             <Link to={'/myself'}>
                 <Typography fontSize={'3rem'} align={'center'} variant={'h1'}>
-                    {myselfName}
+                    😥 Not found
                 </Typography>
                 <Typography fontSize={'1rem'} align={'center'} variant={'body1'} padding={'0.5rem'}>
-                    Click aqui para saber sobre mim
+                    Click aqui para ir para a página inicial
                 </Typography>
             </Link>
         </Box>
