@@ -1,5 +1,4 @@
-import { Box, Typography } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Box, Link, Typography } from '@mui/material';
 import React from 'react';
 
 import { useStyles } from './styles';
@@ -9,7 +8,7 @@ export const NotFound: React.FC = () => {
 
     return (
         <Box className={classes.appContainer}>
-            <Link to={'/myself'}>
+            <Link href={'/myself'}>
                 <Typography fontSize={'3rem'} align={'center'} variant={'h1'}>
                     😥 Not found
                 </Typography>
