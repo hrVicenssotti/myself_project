@@ -1,5 +1,4 @@
-import { Box, Typography } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Box, Link, Typography } from '@mui/material';
 import React from 'react';
 
 import { useStyles } from './styles';
@@ -12,7 +11,7 @@ export const Home: React.FC = () => {
     return (
         <Box className={classes.appContainer}>
             <img className={classes.myselfImage} src={myselfImage} alt={'Minha imagem'} />
-            <Link to={'/myself'}>
+            <Link href={'/myself'}>
                 <Typography fontSize={'3rem'} align={'center'} variant={'h1'}>
                     {myselfName}
                 </Typography>
