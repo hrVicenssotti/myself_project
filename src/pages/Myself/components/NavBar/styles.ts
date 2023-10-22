@@ -2,8 +2,10 @@ import { makeStyles } from '@mui/styles';
 
 export const useStyles = makeStyles(() => ({
     navBar: {
-        boxShadow: '0px 10px 15px -8px #00000018',
+        backgroundColor: 'transparent',
         transition: 'ease-in-out all 400ms',
+        boxShadow: '0px 10px 15px -8px #00000000',
+        backdropFilter: 'blur(6px)',
 
         '& > div': {
             justifyContent: 'space-between',
@@ -23,10 +25,6 @@ export const useStyles = makeStyles(() => ({
         },
     },
     navBarOffScroll: {
-        backgroundColor: '#00000000',
-
-        '& > div': {
-            minHeight: '3.5rem',
-        },
+        boxShadow: '0px 10px 15px -8px #00000018',
     },
 }));

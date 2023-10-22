@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { useStyles } from './styles';
 import { ButtomToTop } from '../../components';
 import { NavBar } from './components';
+import myselfImage from '../../assets/images/myself.jpg';
 
 export const Myself: React.FC = () => {
     const classes = useStyles();
@@ -12,7 +13,7 @@ export const Myself: React.FC = () => {
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 70) {
+            if (window.scrollY > 50) {
                 setOffTopScroll(true);
             } else {
                 setOffTopScroll(false);
@@ -24,7 +25,16 @@ export const Myself: React.FC = () => {
         <Box className={classes.appContainer}>
             <NavBar scrollOffTop={offTopScroll} />
             <Box component={'main'} className={classes.main}>
-                <span>Welcome, how are you?</span>
+                <Box id={'home'} className={`${classes.container} ${classes.diffAnchor}`}>
+                    <Box>
+                        <Box>
+                            <h1>Horlan Vicenssotti</h1>
+                        </Box>
+                        <Box>
+                            <img className={classes.myselfImage} src={myselfImage} alt={'Minha imagem'} />
+                        </Box>
+                    </Box>
+                </Box>
             </Box>
             <ButtomToTop scrollOffTop={offTopScroll} />
         </Box>
