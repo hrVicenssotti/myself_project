@@ -17,7 +17,9 @@ const AboutRoot: React.FC = () => {
             <Box>
                 <Box>
                     <Typography variant={'body1'}>Olá mundo,</Typography>
-                    <Typography variant={'h1'}>Eu sou Horlan Vicenssotti 👋,</Typography>
+                    <Typography variant={'h1'}>
+                        Eu sou <span translate={'no'}>Horlan Vicenssotti</span> 👋,
+                    </Typography>
                     <Typography variant={'body1'}>
                         Sou desenvolvedor FullStack com experiencia em aplicações WEB usando ReactJS, NodeJS, PHP e
                         Typescript. Com habilidade em desenvolver aplicações de fácil uso, responsivo e escalável. Com
