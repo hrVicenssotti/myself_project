@@ -6,7 +6,7 @@ export const useStyles = makeStyles((theme: Theme) => ({
         backgroundColor: theme.palette.secondary.main,
         color: theme.palette.secondary.contrastText,
         boxSizing: 'border-box',
-        minHeight: '200vh',
+        minHeight: '100vh',
     },
     main: {
         boxSizing: 'content-box',
@@ -15,12 +15,14 @@ export const useStyles = makeStyles((theme: Theme) => ({
         padding: '1rem',
 
         '& h1': {
-            fontWeight: 'bold',
+            fontWeight: '500',
             fontSize: '2.5rem',
             margin: '0.25rem 0',
         },
         '& p': {
             fontSize: '1.25rem',
+            fontWeight: '200',
+            textAlign: 'justify',
         },
     },
     diffAnchor: {

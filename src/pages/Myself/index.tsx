@@ -24,7 +24,7 @@ export const Myself: React.FC = () => {
         <Box className={classes.appContainer}>
             <NavBar scrollOffTop={offTopScroll} />
             <Box component={'main'} className={classes.main}>
-                <Box id={'about'} className={`${classes.container} ${classes.diffAnchor}`}>
+                <Box id={'home'} className={`${classes.container} ${classes.diffAnchor}`}>
                     <About />
                 </Box>
             </Box>

@@ -8,6 +8,9 @@ import { useStyles } from './styles';
 
 const AboutRoot: React.FC = () => {
     const classes = useStyles();
+    const urlMap = 'https://maps.app.goo.gl/zNcNqesXwb8EcAKs6';
+    const urlGithub = 'https://github.com/hrVicenssotti';
+    const urlLinkedin = 'https://www.linkedin.com/in/hrvicenssotti';
 
     return (
         <Box className={classes.start}>
@@ -22,27 +25,17 @@ const AboutRoot: React.FC = () => {
                         de mercado.
                     </Typography>
                 </Box>
-                <Box sx={{ margin: '1.25rem 0' }}>
-                    <Link
-                        target={'_blank'}
-                        href={'https://maps.app.goo.gl/zNcNqesXwb8EcAKs6'}
-                        sx={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '1rem',
-                            color: 'inherit',
-                            textDecoration: 'inherit',
-                        }}
-                    >
+                <Box sx={{ margin: '2rem 0' }}>
+                    <Link target={'_blank'} href={urlMap} className={classes.mapLink}>
                         <Map />
                         <Typography variant={'body1'}>Brasil</Typography>
                     </Link>
                 </Box>
-                <Box sx={{ display: 'flex', gap: '1rem' }}>
-                    <Link target={'_blank'} href={'https://github.com/hrVicenssotti'}>
+                <Box className={classes.socialMedia}>
+                    <Link target={'_blank'} href={urlGithub}>
                         <IconGithub sx={{ fontSize: '2.5rem' }} />
                     </Link>
-                    <Link target={'_blank'} href={'https://www.linkedin.com/in/hrvicenssotti/'}>
+                    <Link target={'_blank'} href={urlLinkedin}>
                         <IconLinkedin sx={{ fontSize: '2.5rem' }} />
                     </Link>
                 </Box>
