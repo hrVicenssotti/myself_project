@@ -13,15 +13,20 @@ export const useStyles = makeStyles(() => ({
         borderRadius: '50%',
         boxShadow: '0 0 15px -7px #000000cc',
     },
-    mapLink: {
-        display: 'flex',
-        alignItems: 'center',
-        gap: '1rem',
-        color: 'inherit',
-        textDecoration: 'inherit',
-    },
     socialMedia: {
         display: 'flex',
         gap: '1rem',
+    },
+    mapLink: {
+        display: 'flex',
+        margin: '2rem 0',
+
+        '& > a': {
+            display: 'flex',
+            alignItems: 'center',
+            gap: '1rem',
+            color: 'inherit',
+            textDecoration: 'inherit',
+        },
     },
 }));
