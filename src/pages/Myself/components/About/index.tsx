@@ -27,8 +27,8 @@ const AboutRoot: React.FC = () => {
                         de mercado.
                     </Typography>
                 </Box>
-                <Box sx={{ margin: '2rem 0' }}>
-                    <Link target={'_blank'} href={urlMap} className={classes.mapLink}>
+                <Box className={classes.mapLink}>
+                    <Link target={'_blank'} href={urlMap}>
                         <Map />
                         <Typography variant={'body1'}>Brasil</Typography>
                     </Link>
