@@ -7,6 +7,7 @@ export const useStyles = makeStyles((theme: Theme) => ({
         color: theme.palette.secondary.contrastText,
         position: 'fixed',
         bottom: '1rem',
+        left: '1rem',
         display: 'flex',
         alignItems: 'center',
 
@@ -23,7 +24,6 @@ export const useStyles = makeStyles((theme: Theme) => ({
         borderRadius: '50%',
         boxShadow: '0 0 15px -7px #000000cc',
         lineHeight: 0,
-        left: '1rem',
         cursor: 'pointer',
         padding: '0.75rem',
 

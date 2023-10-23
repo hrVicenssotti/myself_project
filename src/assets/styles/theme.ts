@@ -43,4 +43,7 @@ export const theme = createTheme({
             purple900: '#520F70',
         },
     },
+    typography: {
+        fontFamily: '"Roboto Flex", "sans-serif"',
+    },
 });

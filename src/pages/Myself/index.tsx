@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 
 import { useStyles } from './styles';
 import { ButtomToTop } from '../../components';
-import { NavBar } from './components';
+import { About, NavBar } from './components';
 
 export const Myself: React.FC = () => {
     const classes = useStyles();
@@ -12,7 +12,7 @@ export const Myself: React.FC = () => {
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 70) {
+            if (window.scrollY > 50) {
                 setOffTopScroll(true);
             } else {
                 setOffTopScroll(false);
@@ -24,7 +24,9 @@ export const Myself: React.FC = () => {
         <Box className={classes.appContainer}>
             <NavBar scrollOffTop={offTopScroll} />
             <Box component={'main'} className={classes.main}>
-                <span>Welcome, how are you?</span>
+                <Box id={'home'} className={`${classes.container} ${classes.diffAnchor}`}>
+                    <About />
+                </Box>
             </Box>
             <ButtomToTop scrollOffTop={offTopScroll} />
         </Box>

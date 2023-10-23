@@ -7,10 +7,25 @@ export const useStyles = makeStyles((theme: Theme) => ({
         color: theme.palette.secondary.contrastText,
         boxSizing: 'border-box',
         minHeight: '100vh',
-        padding: '0.5rem',
     },
     main: {
-        paddingTop: '3.5rem',
         boxSizing: 'content-box',
+    },
+    container: {
+        padding: '1rem',
+
+        '& h1': {
+            fontWeight: '500',
+            fontSize: '2.5rem',
+            margin: '0.25rem 0',
+        },
+        '& p': {
+            fontSize: '1.25rem',
+            fontWeight: '200',
+            textAlign: 'justify',
+        },
+    },
+    diffAnchor: {
+        paddingTop: '4rem',
     },
 }));
