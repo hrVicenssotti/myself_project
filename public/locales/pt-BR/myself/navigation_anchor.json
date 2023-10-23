@@ -1,0 +1,22 @@
+{
+    "home": {
+        "anchor": "inicio",
+        "label": "Início"
+    },
+    "about": {
+        "anchor": "sobre",
+        "label": "Sobre"
+    },
+    "skills": {
+        "anchor": "habilidades",
+        "label": "Habilidades"
+    },
+    "projects": {
+        "anchor": "projetos",
+        "label": "Projetos"
+    },
+    "contact": {
+        "anchor": "contato",
+        "label": "Contato"
+    }
+}
