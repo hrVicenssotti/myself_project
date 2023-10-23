@@ -17,10 +17,9 @@ const NabBarRoot: React.FC<NabBarProps> = ({ scrollOffTop, ...props }) => {
                     <Code />
                 </Box>
                 <Box className={classes.navLinks}>
-                    <Link href={'#home'}>Inicio</Link>
+                    <Link href={'#about'}>Sobre</Link>
                     <Link href={'#skills'}>Habilidades</Link>
                     <Link href={'#projects'}>Projetos</Link>
-                    <Link href={'#about'}>Sobre</Link>
                     <Link href={'#contact'}>Contato</Link>
                 </Box>
             </Toolbar>
