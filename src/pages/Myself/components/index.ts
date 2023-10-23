@@ -1,2 +1,2 @@
 export * from './NavBar';
-export * from './About';
+export * from './Apresentation';

@@ -1,11 +1,13 @@
 import { Box } from '@mui/material';
 import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { useStyles } from './styles';
 import { ButtomToTop } from '../../components';
-import { About, NavBar } from './components';
+import { Apresentation, NavBar } from './components';
 
 export const Myself: React.FC = () => {
+    const { t } = useTranslation('navigation_anchor');
     const classes = useStyles();
 
     const [offTopScroll, setOffTopScroll] = useState<boolean>(false);
@@ -24,8 +26,8 @@ export const Myself: React.FC = () => {
         <Box className={classes.appContainer}>
             <NavBar scrollOffTop={offTopScroll} />
             <Box component={'main'} className={classes.main}>
-                <Box id={'home'} className={`${classes.container} ${classes.diffAnchor}`}>
-                    <About />
+                <Box id={t('home.anchor')} className={`${classes.container} ${classes.diffAnchor}`}>
+                    <Apresentation />
                 </Box>
             </Box>
             <ButtomToTop scrollOffTop={offTopScroll} />

@@ -3,6 +3,7 @@ import { ScopedCssBaseline } from '@mui/material';
 import { BrowserRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import { StrictMode } from 'react';
+import './i18n';
 
 import { theme } from './assets/styles/theme';
 import App from './App';
