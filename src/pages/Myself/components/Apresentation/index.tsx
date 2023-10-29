@@ -40,7 +40,7 @@ const ApresentationRoot: React.FC = () => {
                 </Box>
             </Box>
             <Box sx={{ justifySelf: 'center' }}>
-                <img className={classes.myselfImage} src={myselfImage} alt={'Minha imagem'} />
+                <img className={classes.myselfImage} src={myselfImage} alt={t('my_img')} />
             </Box>
         </Box>
     );

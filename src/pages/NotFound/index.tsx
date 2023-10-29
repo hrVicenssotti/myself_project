@@ -8,7 +8,7 @@ export const NotFound: React.FC = () => {
 
     return (
         <Box className={classes.appContainer}>
-            <Link href={'/myself'}>
+            <Link href={'/'}>
                 <Typography fontSize={'3rem'} align={'center'} variant={'h1'}>
                     😥 Not found
                 </Typography>
