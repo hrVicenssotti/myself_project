@@ -7,7 +7,7 @@ import { ButtomToTop } from '../../components';
 import { Apresentation, NavBar, Skills } from './components';
 
 export const Myself: React.FC = () => {
-    const { t } = useTranslation('navigation_anchor');
+    const { t } = useTranslation('myself/navigation_anchor');
     const classes = useStyles();
 
     const [offTopScroll, setOffTopScroll] = useState<boolean>(false);
