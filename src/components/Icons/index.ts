@@ -20,3 +20,4 @@ export * from './IconNestJS';
 export * from './IconViteJS';
 export * from './IconLinux';
 export * from './IconDocker';
+export * from './IconVela';
