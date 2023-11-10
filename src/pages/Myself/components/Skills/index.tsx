@@ -9,6 +9,7 @@ import {
     IconCss,
     IconDocker,
     IconExpressJS,
+    IconFigma,
     IconGit,
     IconHtml,
     IconJavascript,
@@ -23,6 +24,7 @@ import {
     IconReactJS,
     IconSymfony,
     IconTypescript,
+    IconVela,
     IconViteJS,
 } from '../../../../components';
 
@@ -135,6 +137,11 @@ const SkillsRoot: React.FC = () => {
                         placeholder={'PostgreSQL'}
                     />
                     <LinkSkill
+                        iconLink={<IconVela />}
+                        link={'https://go-vela.github.io/docs/'}
+                        placeholder={'Vela'}
+                    />
+                    <LinkSkill
                         iconLink={<IconLinux />}
                         link={'https://www.linux.org/'}
                         placeholder={'GNU/Linux'}
@@ -143,6 +150,11 @@ const SkillsRoot: React.FC = () => {
                         iconLink={<IconGit />}
                         link={'https://git-scm.com/'}
                         placeholder={'Git'}
+                    />
+                    <LinkSkill
+                        iconLink={<IconFigma />}
+                        link={'https://www.figma.com/'}
+                        placeholder={'Figma'}
                     />
                 </Box>
             </Box>
