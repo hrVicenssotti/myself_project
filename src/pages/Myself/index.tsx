@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import { useStyles } from './styles';
 import { ButtomToTop } from '../../components';
-import { Apresentation, NavBar, Skills } from './components';
+import { Apresentation, Contact, NavBar, Projects, Skills } from './components';
 
 export const Myself: React.FC = () => {
     const { t } = useTranslation('myself/navigation_anchor');
@@ -31,6 +31,12 @@ export const Myself: React.FC = () => {
                 </Box>
                 <Box id={t('skills.anchor')} className={`${classes.container} ${classes.diffAnchor}`}>
                     <Skills />
+                </Box>
+                <Box id={t('projects.anchor')} className={`${classes.container} ${classes.diffAnchor}`}>
+                    <Projects />
+                </Box>
+                <Box id={t('contact.anchor')} className={`${classes.container} ${classes.diffAnchor}`}>
+                    <Contact />
                 </Box>
             </Box>
             <ButtomToTop scrollOffTop={offTopScroll} />
