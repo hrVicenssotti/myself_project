@@ -21,3 +21,4 @@ export * from './IconViteJS';
 export * from './IconLinux';
 export * from './IconDocker';
 export * from './IconVela';
+export * from './IconMongo';
