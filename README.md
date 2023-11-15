@@ -1,27 +1,59 @@
-# React + TypeScript + Vite
+# 💻 My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Here you can see the source code of my portfolio, with information about me, my skills, my projects and my contacts. The project uses the following technologies: Typescript, ReactJS, Vite and Material UI5.
 
-Currently, two official plugins are available:
+To run it, follow one of the steps below. 👇
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## DEV
 
-## Expanding the ESLint configuration
+To run the project in dev mode:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```shell
+yarn dev --port 3000
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+If you are running the application in a remote environment or in a container, you will need to use the `--host` flag to expose the network:
+
+```shell
+yarn dev --port 3000 --host
+```
+
+The project will run on port `3000`.
+
+## PROD
+
+In order to run the project optimally in production, we will follow a few more steps.
+
+First we need to build:
+
+```shell
+yarn build
+```
+
+When executed, the `dist` folder with the optimized files will be generated. Then you need to serve these files with an http/https server, for example, I'm going to use nodejs http-server (for production you should use something more robust):
+
+```shell
+npx http-server ./dist --port 3000
+```
+
+The project will run on port `3000`.
+
+# Links úteis
+
+Typescript:\
+https://www.typescriptlang.org/
+
+Node:\
+https://nodejs.org/
+
+React:\
+https://react.dev/
+
+Materia-UI:\
+https://mui.com/
+
+Vite:\
+https://vitejs.dev/
+
+Skill Icons:\
+https://skillicons.dev/
