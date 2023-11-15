@@ -8,6 +8,7 @@ import {
     IconHtml,
     IconJavascript,
     IconLinux,
+    IconMongo,
     IconMui,
     IconMysql,
     IconNestJS,
@@ -29,6 +30,21 @@ interface SkillsProps {
 }
 
 export const skills: Array<SkillsProps> = [
+    {
+        icon: <IconJavascript />,
+        link: 'https://developer.mozilla.org/docs/Web/JavaScript',
+        placeholder: 'Javascript',
+    },
+    {
+        icon: <IconTypescript />,
+        link: 'https://www.typescriptlang.org/',
+        placeholder: 'Typescript',
+    },
+    {
+        icon: <IconPhp />,
+        link: 'https://www.php.net/',
+        placeholder: 'PHP',
+    },
     {
         icon: <IconNodeJS />,
         link: 'https://nodejs.org/',
@@ -70,21 +86,6 @@ export const skills: Array<SkillsProps> = [
         placeholder: 'Bootstrap',
     },
     {
-        icon: <IconPhp />,
-        link: 'https://www.php.net/',
-        placeholder: 'PHP',
-    },
-    {
-        icon: <IconJavascript />,
-        link: 'https://developer.mozilla.org/docs/Web/JavaScript',
-        placeholder: 'Javascript',
-    },
-    {
-        icon: <IconTypescript />,
-        link: 'https://www.typescriptlang.org/',
-        placeholder: 'Typescript',
-    },
-    {
         icon: <IconCss />,
         link: 'https://developer.mozilla.org/docs/Web/css',
         placeholder: 'CSS',
@@ -103,6 +104,11 @@ export const skills: Array<SkillsProps> = [
         icon: <IconPostgres />,
         link: 'https://www.postgresql.org/',
         placeholder: 'PostgreSQL',
+    },
+    {
+        icon: <IconMongo />,
+        link: 'https://mongodb.com/',
+        placeholder: 'MongoDB',
     },
     {
         icon: <IconDocker />,
